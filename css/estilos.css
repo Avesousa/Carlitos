@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Comienzo de cabeza */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.75)), url("http://carlitos.com.ar/fin/image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+header nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    background-color: #263238;
+  }
+}
+
+header .mouse {
+  background-color: #263238;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+header .mouse img {
+  width: 45px;
+  height: 45px;
+  top: 7.5px;
+  transform: translateY(0);
+}
+
+header .boton {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+ header .boton {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 25px;
+    height: 25px;
+    margin: 17.5px;
+    float: right;
+    cursor: pointer;
+  }
+}
+
+header .boton span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  list-style: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+ header ul {
+    display: block;
+    width: 300px;
+    height: 100vh;
+    margin: 0;
+    background-color: #11171a;
+    transform: translate(-300px, 60px);
+    transition: transform 0.3s ease-in-out;
+  }
+  header .menu-activo {
+    transform: translate(0, 60px);
+  }
+}
+
+a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  line-height: 60px;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 900px) {
+a {
+    padding-left: 15px;
+    line-height: 3;
+    background-color: #11171a;
+    box-shadow: 0 0 #fff inset, 0 0 #07090a inset;
+  }
+a:hover {
+    padding-left: 20px;
+    box-shadow: 5px 0 #fff inset, 300px 0 #07090a inset;
+  }
+}
+
+header img {
+  display: block;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s;
+}
+
+header .logo2a {
+  display: none;
+  position: relative;
+  top: 8vh;
+  width: 100px;
+  height: 100px;
+
+}
+
+@media screen and (max-width: 900px) {
+header  img {
+    display: none;
+  }
+header .logo2a {
+    display: block;
+}
+}
+
+/* Final de la cabecera */
+
+/* Sección de productos*/
+
+.contenedorprod{
+  height: 400px;
+  width: 100%;
+  top: 120%;
+}
+
+.contenedorprod a h2{
+  background-color: rgba(0,0,0,0.4);
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  line-height: 60px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.bgprod {
+  float: left;
+  width: 16.667%;
+  height: 400px;
+}
+
+/* Fondos a los bloques */
+
+.bgprod1 {
+  background: url(http://carlitos.com.ar/fin/image/bgprod/fiambre.jpg) no-repeat;
+}
+
+.bgprod2 {
+  background-image: url(http://carlitos.com.ar/fin/image/bgprod/pizza.jpg) no-repeat;
+}
+
+.bgprod3 {
+  background-image: url(http://carlitos.com.ar/fin/image/bgprod/pan.jpg) no-repeat;
+}
+
+.bgprod4 {
+  background-image: url(http://carlitos.com.ar/fin/image/bgprod/quesocream.jpg) no-repeat;
+}
+
+.bgprod5 {
+  background-image: url(http://carlitos.com.ar/fin/image/bgprod/queso.jpg) no-repeat;
+}
+
+.bgprod6 {
+  background-image: url(http://carlitos.com.ar/fin/image/bgprod/secos.jpg) no-repeat;
+ }
+
+/* Hover */
+
+.bgprod:hover h2{
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(250,250,250,1);
+  line-height: 250px;
+}
+
+
+/* Sección general */
+
+main {
+  width: 100%;
+  padding: 5% 10%;
+  background-color: #f2f2f2;
+}
+
+main section {
+  margin-bottom: 50px;
+  color: #222;
+}
+
+main section h2 {
+  font-size: 3em;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+main section p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}

@@ -1,0 +1,53 @@
+.cuadro1{
+	width: 30%;
+	background: red;
+	float: left;
+}
+
+.cuadro2{
+	width: 40%;
+	background: green;
+	float: left;
+}
+
+.cuadro3{
+	width: 30%;
+	background: yellow;
+	float: left;
+}
+
+.cuerpofooter{
+	background-image: url(https://st.depositphotos.com/1011833/1514/i/950/depositphotos_15147795-stock-photo-aged-treasure-map-with-compass.jpg);
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+/* Estilos del formulario */
+
+input, textarea, select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 50px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    color: #ff2;
+}
+
+/* Final de estilos del formulario*/

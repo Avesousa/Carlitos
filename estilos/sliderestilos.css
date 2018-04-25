@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('http://carlitos.com.ar/fonts/flexslider-icon.eot');
+  src: url('http://carlitos.com.ar/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('http://carlitos.com.ar/fonts/flexslider-icon.woff') format('woff'), url('http://carlitos.com.ar/fonts/flexslider-icon.ttf') format('truetype'), url('http://carlitos.com.ar/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+.flexslider{
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 50;
+}
+
+.slides{
+  height: 100%;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slides img{
+  width: 100%;
+  width: 100%;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav{
+  list-style: none;
+}
+
+.flex-control-nav{
+  width: 100%;
+  text-align: center;
+}
+
+.flex-control-nav li{
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.flex-control-nav li a{
+  display: block;
+  background: #777777;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  text-indent: -9999px;
+}
+
+.flex-control-nav li a:hover {
+  background: #2E2E2E;
+}
+
+.flex-control-nav li a.flex-active {
+  background: #2E2E2E;
+}
+
+.flex-direction-nav a{
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  z-index: 99;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.flex-direction-nav .flex-prev{
+  left: 0;
+}
+
+.flex-direction-nav .flex-next{
+  right: 0;
+}
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
