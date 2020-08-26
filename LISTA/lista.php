@@ -115,6 +115,9 @@
         Servicio habilitado solo por las limitaciones de sanidad empleadas.
       </span>
     </div>
+    <?php
+      include './conexion/conectar.php';
+    ?>
     <!--Los script-->
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/jqueryLAZY.js"></script>
