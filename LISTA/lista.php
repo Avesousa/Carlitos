@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<meta name="propeller" content="8780b950a5c65edad763f4495b069142">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="CARLITOS, carlitos, Carlitos, fiambreria, jamon, queso, lacteos,
-    distribuidora, fiambres, fiambre, oferta, fiambreria el palomar, fiambreria carlitos, 
-    El Palomar, el palomar, palomar">
-    <title>Lista de precios - Distribuidora Carlitos, S.A</title>
-    <link rel="icon" href="image/favicon.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="css/estilosLista.css">
-    <link rel="stylesheet" type="text/css" href="boot/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilosdescroll.css">
-</head>
+<?php
+  include './include/head.php';
+?>
 <body>
     <header>
         <nav>
@@ -116,7 +106,7 @@
       </span>
     </div>
     <?php
-      include './conexion/conectar.php';
+      include './include/conexion/conectar.php';
     ?>
     <!--Los script-->
     <script src="scripts/jquery-3.4.1.min.js"></script>

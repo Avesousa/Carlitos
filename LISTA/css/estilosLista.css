@@ -95,11 +95,8 @@ body{
   }
   
   .listaPdf{
-    background-color: rgba(253, 214, 42,0.8);
+    background-color: rgba(253, 42, 105, 0.8);
     padding: 10%;
-    padding-top: 15%;
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
     text-align: center;
   }
 
