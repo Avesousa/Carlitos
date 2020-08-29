@@ -9,7 +9,7 @@
         mercado del queso, Queso, hurligham">
         <title>Pedidos a domicilio - Mercado del queso</title>
         <link rel="icon" href="image/favicon.png" type="image/png">
-        <link rel="stylesheet" type="text/css" href="css/estilosLista.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
         <link rel="stylesheet" type="text/css" href="boot/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilosdescroll.css">
     </head>

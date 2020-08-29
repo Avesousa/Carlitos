@@ -1,616 +1,204 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
-
-body{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/bgboco.jpg");
-  background-attachment: fixed;
-  background-position: right;
-}
-
-/* Comienzo de cabeza */
 
 header {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  z-index: 10;
-}
-header nav {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  transition: background-color 0.3s;
-}
-header .mouse {
-  background-color: #263238;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-}
-header .mouse img {
-  width: 45px;
-  height: 45px;
-  top: 7.5px;
-  transform: translateY(0);
-}
-header .boton {
-  display: none;
-}
-header .boton span {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-}
-header ul {
-  display: flex;
-  justify-content: space-between;
-  top:0;
-  width: 95%;
-  max-width: 1000px;
-  margin: 0 auto;
-  list-style: none;
-  background-color: transparent;
-}
-.logoa {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  line-height: 60px;
-  transition: all 0.3s;
-}
-
-.logoa:hover{
-  color: #878787;
-  text-decoration: none;
-}
-header nav ul a img {
-  display: block;
-  position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
-  width: 300px;
-  height: 300px;
-  transition: all 0.3s;
-  left: 0px;
-}
-.logomini {
-  position: fixed;
-  display: none;
-  margin: 0px auto;
-  width: 100px;
-  height: 100px;
-
-}
-
-.informacion{
-  background-color: beige;
-  text-align: center;
-}
-
-
-.informacion img{
-  width: 60%;
-  border-radius: 100%;
-  border: 10px solid #CFCECE; 
-}
-
-.informacion img:hover{
-  border: 5px solid #CFCECE;
-
-}
-
-@media screen and (max-width: 900px) {
-  header{
-    height: 50vh;
-  }  
-
-  nav {
-    background-color: #263238;
-  }
-
-  header nav ul a img {
-    display: none;
-  }
-
-  .logomini {
-
-    display: inline;
-  }
-
-  header ul a {
-    padding-left: 15px;
-    line-height: 3;
-    text-align: center;
-    box-shadow: 0 0 #fff inset, 0 0 #be690e inset;
-  }
-
-  header ul a:hover {
-    padding-left: 20px;
-    box-shadow: 5px 0 #fff inset, 300px 0 #be690e inset;
-  }
-
-  header ul {
+    width: 100%;
     position: relative;
-    display: block;
-    top: 0;
-    width: 300px;
-    height: 1000%;
-    margin: 0;
-    background-color: rgba(0,0,0,0.5);
-    transform: translate(-300px, 60px);
-    transition: transform 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 10;
+  }
+  header nav {
+    position: fixed;
+    width: 100%;
+    /*height: 100%;*/
+    background-color: rgba(36, 36, 36, 1);
+  }
+  header .mouse {
+    background-color: #263238;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  }
+  header .mouse img {
+    width: 45px;
+    height: 45px;
+    top: 7.5px;
+    transform: translateY(0);
   }
 
-  header .boton {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    width: 25px;
-    height: 25px;
-    margin: 17.5px;
-    float: right;
-    cursor: pointer;
-  }
-
-  header .menu-activo {
-    transform: translate(0, 60px);
-  }
-
+body{
+    background-attachment: fixed;
+    background-position: right;
 }
-/* Final de la cabecera */
-
-/* Sección de productos*/
-.bgprod {
-  height: 400px;
-  padding-right: 0px;
-  padding-left: 0px;
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
 }
 
-/* Fondos a los bloques */
-
-.bgprod1 {background: url("../image/bgprod/fiambre.jpg") no-repeat;}
-.bgprod2 {background: url("../image/bgprod/pizza.jpg") no-repeat;}
-.bgprod3 {background: url("../image/bgprod/pan.jpg") no-repeat;}
-.bgprod4 {background: url("../image/bgprod/quesocream.jpg") no-repeat;}
-.bgprod5 {background: url("../image/bgprod/queso.jpg") no-repeat;}
-.bgprod6 {background: url("../image/bgprod/secos.jpg") no-repeat;}
-/* Hover */
-.bgprod h2{
-  background-color: rgba(0,0,0,0.4);
-  font-size: 20px;
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  line-height: 60px;
-  transition: all 0.3s;
-  text-align: center;
+.logoMDQ{
+  display: inline-block;
+  width: 50%;
 }
 
-.bgprod:hover h2{
-  background-color: rgba(0,0,0,0.8);
-  color: rgba(250,250,250,1);
-  line-height: 250px;
-  width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-  .bgprod {
-  height: 200px;
-  }
-
-  .bgprod:hover h2{
-    line-height: 125px;
-
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .bgprod {
-  height: 200px;
-  }
-
-  body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/bgmanjar.jpg");
-    background-position: top center;
-  }
-}
-
-/* Sección general */
-
-footer{
-  text-align: center;
-  background-color: black;
-  color: #C0C0C0;
-} 
-
-
-/* Sección de footer */
-
-
-.mapa{
-  width: 100%;
-  padding: 10px;
-  
-}
-.redes{
-  text-align: center;
-}
-
-.redesSociales img {
-  width: 100%;
-}
-
-.footerColumna{
-  width:50%;
+.lulu{
+  display: inline-block;
+  width: 10%;
   float: right;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-  color: white;
-  padding: 10px;
 }
-
-.footerColumna h3{
-  font-family: cookie,cursive;
-  font-size: 26px;
-  color: #f0f0f0;
-  padding-bottom: 16px;
-
-}
-
-.derechos{
-  width: 100%;
-}
-
-.derechos p{
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  line-height: 60px;
-  transition: all 0.3s;
-}
-
-@media screen and (max-width: 600px) {
-  main {
-  display:none;
+  
+  .listaPdf{
+    background: url("../image/bg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10%;
+    padding-top: 15%;
+    text-align: center;
   }
-  .mapa{
+
+  .listaPdf:before {
+    content:'';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+
+  }
+  .listado{
+    margin-bottom: 20px ;
+  }
+  
+  .listaPdf a{
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    margin: 20px;
+  }
+  
+  .listaPdf a:hover{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 235, 154);
+    font-size: 20px;
+  }
+  
+  .listaPdf h1{
+    text-align: center;
+    color: white;
+  }
+  
+  .formularioEnvio{
+      width: 40%;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .formularioEnvio div{
+    margin-bottom: 0;
+    line-height: 3px;
+  }
+
+  .ejemplo{
+      font-size: 10px;
+      line-height: 5px;
+      margin: 0 auto;
+      width: 60%;
+      text-align: center;
+      background-color: rgb(255, 235, 154);
+      padding: 2%;
+      padding-top: 4%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      border-radius: 10%;
+  }
+
+  .ejemplo p{
+    line-height: 10px;
+  }
+
+  .addItem{
     width: 100%;
   }
-  .footerColumna{
-    width: 100%; 
+
+  .addItem > div{
+    margin: 0 auto;
   }
-}
 
-/*PRUEBAS */
+  .addItem .row div{
+    padding-left: 4px;
+    padding-right: 2px;
+  }
 
-#carrusel {
-  width: 100%;
-}
+  .addItem .row div:first-child{
+    padding: 0;
+  }
 
-#carrusel div{
-  width: 20%;
-  float: left;
-}
-
-#carrusel div img{
-  width: 100%;
-}
-
-#galeria{
-  height: 80%;
-}
-.divImagenGaleria img{
-  width: 100%;
-  padding: 0px;
-  transition: opacity .5s;
-  /*text-align: center;
-  display: inline-block;
-  position: relative;*/
-}
-.divImagenGaleria{
-  text-align: center;
-  display: inline-block;
-  position: relative;
-}
-
-.divImagenGaleria span{
-  width: 100%;
-  padding: 2%;
-  margin: auto 0;
-  background: rgba(0,0,0,0.58);
-  position: absolute;
-  text-align: center;
-  bottom: 0px;
-  right: 0px;
-  font-size: 1.2em;
-  color: #C0C0C0;
-}
-
-#imgGal{
-  opacity: 1;
-}
-
-.primeroT{
-  opacity: 1;
-}
-
-.segundoT{
-  opacity: 0;
-}
-
-.ocultar{
-  animation-name: hid;
-  animation-duration: 2s; 
-}
-
-.aparecer{
-  animation-name: sho;
-  animation-duration: 4s
-}
-
-@keyframes hid{
-  from{
-    opacity: 1;
-  } to {
+  .addItem .row div:last-child label{
     opacity: 0;
   }
-}
 
-@keyframes sho{
-  from{
-    opacity: 0;
-  } to {
-    opacity: 1;
-  }
-}
-
-/*VENTANA POP UP PARA MOSTRAR PDF*/
-
-.overlayPDF {
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-    visibility: hidden;
-    z-index: 1580;
-}
-
-.overlayPDF.active {
-	visibility: visible;
-}
-
-.popupPDF {
-  /*background: #F8F8F8;*/
-  background-color: rgba(255,255,255,0.3);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	/*padding-top: 1px;*/
-	text-align: center;
-	width: 60%;
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
-}
-
-.popupPDF .btn-cerrar-popup {
-	font-size: 24px;
-	line-height: 16px;
-	display: none;
-	text-align: right;
-	transition: .3s ease all;
-  color: rgb(97, 96, 96);
-  cursor: pointer ;
-}
-
-.popupPDF .btn-cerrar-popup:hover {
-    color: #000;
-    text-decoration: none;
-}
-
-#imagenpopup{
-  display: none;
-}
-
-.popupPDF.active {	transform: scale(1); opacity: 1; }
-
-.popupPDF img{
-  width: 80vh;
-  height: 80vh;
-}
-
-.popupPDF p{
-  color: #000;
-}
-
-@media screen and (max-width: 1200px) {
-  
-  .popupPDF{
-    width: 95%;
+  .addItem .row div:last-child a{
+    margin: 0;
+    display: flex;
+    padding: 15px;
   }
 
-  .popupPDF h2{
-    font-size: 1em;
+
+  .pedido > label{
+    margin-bottom: 8%;
   }
 
-  .popupPDF p{
-    font-size: 0.8em;
+  .resaltador{
+      font-size: 16;
+      font-weight: 900;
+      color: white;
   }
 
-  .popupPDF img{
-    width: 90%;
-    height: 90%;
+  .listado > p{
+      color: rgb(58, 58, 58);
+      line-height: 15px;
+      font-weight: 600;
+
   }
 
-}
+  .listado > h2{
+      color: tomato;
+      font-size: 18px;
+  }
 
-.envios{
-  background: /*linear-gradient(rgba(255, 254, 228, 0.3),rgba(255,253,216,0.3)), */url("../image/bgfooter.jpg");
-  background-size: 100%;
-  background-position: center;
-  height: 100%;
-  padding: 2%;
-  padding-left: 0;
-  padding-right: 0;
-}
+  p.letrasXL{
+    color: white;
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 32px;
+    padding: 10px;
+  }
 
-.envios h1{
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  .formularioEnvio p{
+    color: white;
+  }
 
-.alert-carlitos{
-  color: white;
-  background-color: brown;
-  border-color: rgb(112, 30, 30);
-}
+  @media (max-width: 700px) {
+    .listaPdf {
+      background: url("../image/bg_movil_v2.svg") no-repeat;
+      background-size: 100vh;
+      height: 100%;
+    }
 
-.envios span{
-  font-weight: 900;
-}
+    .formularioEnvio{
+      width: 100%;
+    }
 
-.envios button{
-  font-size: 28px;
-  padding: 10px;
-}
-
-.listNew{
-  font-weight: 900;
-  font-size: 18px;
-  color: #fff;
-  border-bottom: brown solid 5px;
-  height: 60px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.listNew:hover{
-  color: #e9e9e9;
-  border: none;
-  background-color: brown;
-}
-
-/*SECTOR ADMINISTRACIÓN*/
-
-.adminLogo{
-  margin: 0 auto;
-}
-
-.adminClick{
-  cursor: pointer;
-}
-
-
-.adminPagination{
-  background-color: rgba(255,255,255,0.5);
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-
-.adminPage{
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-  padding: 2px;
-}
-
-.adminPage:hover{
-  color: rgb(26, 17, 17);
-  text-decoration: none;
-}
-
-.adminPageSelected{
-  color: rgb(134, 1, 1);
-  font-weight: 900;
-}
-
-.adminSearch{
-  width: 100%;
-}
-
-.adminSearch input{
-  font-size: 25px;
-  padding-right: 5px;
-  height: 60px;
-}
-
-.adminSearch input[type=text]{
-  width: 90%;
-}
-
-.adminSearch input[type="submit"]{
-  width: 9%;
-  font-size: 16px;
-}
-
-#adminNav{
-  background: #263238;
-  margin-bottom: 2%;
-  height: 110px;
-}
-
-#adminNav > .row{
-  padding: 5px;
-}
-
-#adminNav h2{
-  font-size: 14px;
-  color: white;
-}
-
-.adminLogomini {
-  position: fixed;
-  margin: 0px auto;
-  width: 100px;
-  height: 100px;
-
-}
-
-.adminLink{
-  margin-top: 40px;
-}
-
-.adminLink a{
-  margin-right: 5%;
-  text-decoration: none;
-}
-
-.adminLink a:hover{
-  border-bottom: 2px red solid;
-}
-
-#adminNav h2:hover{
-  font-size: 16px;
-}
-
-.adminNotification{
-  background-color: tomato;
-  padding: 3px;
-  border-radius: 15px;
-}
-
-.editTextArea{
-  max-height: 160px;
-  min-height: 160px;
-  max-width: 100%;
-  min-width: 100%;
-}
+    .listaPdf h1{
+      font-size: 24px;
+    }
+  }
