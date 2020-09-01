@@ -38,7 +38,7 @@ if($con->query($sql) === true){
 
 $con->close();
 
-header("Location:success.html");
+header("Location: ./include/componentes/success.php");
 
 
 ?>

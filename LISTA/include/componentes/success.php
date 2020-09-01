@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+  include './include/head.php';
+?>
 <body>
-    <header>
-        <nav>
-          <ul id="menu">
-            <li>
-                <img src="image/logo.png" alt="Logo de distribuidora carlitos"/>
-            </li>
-          </ul>
-        </nav>
-    </header>
+    <?php
+        include './include/componentes/header.php';
+    ?>
     <div class="container-fluid" style="background-color: rgba(253, 214, 42,0.8);padding: 10%;padding-top: 15%;">
       <div class="col-12">
         
@@ -22,11 +19,9 @@
       </span>
     </div>
     <!--Los script-->
-    <script src="scripts/jquery-3.4.1.min.js"></script>
-    <script src="scripts/jqueryLAZY.js"></script>
-    <script src="boot/js/bootstrap.min.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/eskju.jquery.scrollflow.min.js"></script>
-    
+    <!--Los script-->
+    <?php
+        include './include/javascript.php';
+    ?>
 </body>
 </html>
